@@ -3,10 +3,10 @@
 # Classes
 + [Data Analytics for Cities](http://labs.centerforgov.org/Analytics-Training/20160204_DataAnalyticsForCities)
 + [The Problems of City Managers](http://labs.centerforgov.org/Analytics-Training/20160523_SIA)
-+ [Interactive Webmapping with CartoDB](http://bit.ly/GovEx-CDB)
-+ [Statistics and Data Modeling with City Data](http://bit.ly/GovEx-Stats)
-+ [Python for Census Data Analysis](http://bit.ly/govex-python)
-+ [GovEx Data Ingest Application](http://bit.ly/govex-aws)
++ [Interactive Webmapping with CartoDB](http://labs.centerforgov.org/Analytics-Training/20160524_CDB)
++ [Statistics and Data Modeling with City Data](http://labs.centerforgov.org/Analytics-Training/20160524_StatsAndModeling)
++ [Python for Census Data Analysis](http://labs.centerforgov.org/Analytics-Training/20160720_PythonCensus)
++ [GovEx Data Ingest Application](http://labs.centerforgov.org/Analytics-Training/20160920_GovEx_AWS)
 + [Mapping in SQL](http://bit.ly/govex-mapping-sql)
 
 <p class="footer">
