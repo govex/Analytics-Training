@@ -18,19 +18,19 @@ layout:true
 
 class:center,middle
 
-![img-center-70](../images/wwc_govex_logo.png)
-#Python for Census Data Analysis
+![img-center-60](../images/wwc_govex_logo.png)
+# Python for Census Data Analysis
 
 - - - 
 
-##Richard Dunks
-###Follow along at: http://bit.ly/govex-python
+## Richard Dunks
+### Follow along at: <br>http://labs.centerforgov.org/Analytics-Training/20160720_PythonCensus
 
-![img-center-40](../images/datapolitan.png)
+![img-center-30](../images/datapolitan.png)
 
 ---
 
-#Goals
+# Goals
 --
 
 + Introduce application programming interfaces (APIs) and their use in data analysis
@@ -49,7 +49,7 @@ class:center,middle
 
 ---
 
-#Key Outcomes
+# Key Outcomes
 --
 
 + You will be familiar with basic syntax, data structures, and commonly used packages for data analysis in Python
@@ -65,20 +65,20 @@ class:center,middle
 
 ---
 
-#Getting Started - Download a text editor
+# Getting Started - Download a text editor
 + [Sublime Text](https://www.sublimetext.com/3)
 + [Atom](https://atom.io/)
 + [Notepad++](https://notepad-plus-plus.org/download/v6.9.2.html) (if you're on Windows)
 
 ---
 
-#Getting Started - Download Python
+# Getting Started - Download Python
 + https://www.continuum.io/downloads
 + Select Python 3.5 ([it's the right thing to do](https://pythonclock.org/))
 
 ---
 
-#Introduction to APIs
+# Introduction to APIs
 --
 
 + Application Program Interface (API)
@@ -88,7 +88,7 @@ class:center,middle
 
 ---
 
-#API Steps
+# API Steps
 --
 
 + Make a request
@@ -103,7 +103,7 @@ class:center,middle
 
 ---
 
-#API Request
+# API Request
 --
 
 + Endpoint: http://endpoint.api.com/search?
@@ -116,14 +116,14 @@ class:center,middle
 --
 
 
-#Put it all together for the request
+# Put it all together for the request
 --
 
 + http://endpoint.api.com/search?query=search_term&client_id=123&client_secret=abc
 
 ---
 
-#API Response
+# API Response
 --
 
 ![img-center-90](../images/api2.png)
@@ -132,32 +132,32 @@ class:center,middle
 ![img-center-60](../images/api3.png)
 --
 
-###This is JSON (**J**ava**S**cript **O**bject **N**otation)
+### This is JSON (**J**ava**S**cript **O**bject **N**otation)
 
 ---
 
-#Foursquare API Request
+# Foursquare API Request
 ![img-center-80](../images/4s_api1.png)
 
 ---
 
-#Foursquare API Request
+# Foursquare API Request
 ![img-center-80](../images/4s_api2.png)
 
 --
 
-###Endpoint
+### Endpoint
 --
 
 + `https://api.foursquare.com/v2/venues/search?`
 
 ---
 
-#Foursquare API Request
+# Foursquare API Request
 ![img-center-80](../images/4s_api3.png)
 --
 
-###Query Parameters
+### Query Parameters
 --
 
 + `ll=40.7037253789768,-74.0079939173954`
@@ -170,15 +170,15 @@ class:center,middle
 
 ---
 
-#Foursquare API Request
+# Foursquare API Request
 ![img-center-80](../images/4s_api4.png)
 
 ---
 
-#Foursquare API Request
+# Foursquare API Request
 ![img-center-80](../images/4s_api4.png)
 
-###Authentication (optional in some cases)
+### Authentication (optional in some cases)
 --
 
 + `client_id=TQTH2POSXDUDYOHKHXM0VKDRCBSSYAFUWMVSWBCI10URJBTR`
@@ -191,19 +191,19 @@ class:center,middle
 
 ---
 
-#API Response
+# API Response
 ![img](../images/4s_api_resp.png)
 
 ---
 
 class:center,middle
-#Questions?
+# Questions?
 <!-- ![img](../images/Batman-and-Robin-Running_meme.png)
-###https://developer.foursquare.com/docs/venues/search 
+### https://developer.foursquare.com/docs/venues/search 
  -->
 ---
 
-#Let's do this
+# Let's do this
 + We're going to query [NYC's 311 portal](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9) for a day's worth of noise complaints
 + Figure out the endpoint, query parameters, and quirks of the [SoDA API](https://dev.socrata.com/consumers/getting-started.html)
 + Write the API request in your text editor and test in your browser until you get the output you want
@@ -211,7 +211,7 @@ class:center,middle
 ---
 
 class:center,middle
-#10 Min Break
+# 10 Min Break
 <!-- 10:50 - 11:00 -->
 ![img-center-30](http://imgs.xkcd.com/comics/api.png)
 Source: http://xkcd.com/1481/
@@ -219,12 +219,12 @@ Source: http://xkcd.com/1481/
 ---
 
 class:center,middle
-#Introduction to [Python](#118)
+# Introduction to [Python](#118)
 ![img-center-90](../images/python_dev.jpg)
 
 ---
 
-#Python facts
+# Python facts
 --
 
 + Comes from Monty Python and Flying Circus
@@ -240,13 +240,13 @@ class:center,middle
 
 ---
 
-#Do this
+# Do this
 + Open Anaconda and start a notebook
 + Let's learn some Python
 
 ---
 
-#Important packages
+# Important packages
 + [`requests`](http://docs.python-requests.org/en/master/)
 + [`pandas`](http://pandas.pydata.org/)
 
@@ -262,16 +262,16 @@ Source: http://xkcd.com/353/
 
 class:center,middle
 ![img-center-90](../images/census_logo3.jpg)
-#Let's talk about the Census
+# Let's talk about the Census
 
 ---
 
 class:center,middle
-#Some Important Ideas
+# Some Important Ideas
 
 ---
 
-#Census vs Survey
+# Census vs Survey
 --
 
 + A census is a full accounting for every person
@@ -287,7 +287,7 @@ class:center,middle
 
 ---
 
-#Adminstrative areas
+# Adminstrative areas
 --
 
 + Delineated by OMB
@@ -300,19 +300,19 @@ class:center,middle
 
 ---
 
-#Adminstrative areas
+# Adminstrative areas
 ![img-center-70](../images/censusgeo.png)
 
 ---
 
-#A note on ZIP Code Tabulation Areas
+# A note on ZIP Code Tabulation Areas
 + ZIP Codes and ZCTAs aren't the same thing
 [![img-center-50](http://www.unitedstateszipcodes.org/images/city-block.png)](http://www.unitedstateszipcodes.org/)
 + .red[Google ZIP codes aren't ZCTAs]
 
 ---
 
-#We're going to be focusing on [Places](https://en.wikipedia.org/wiki/Place_%28United_States_Census_Bureau%29)
+# We're going to be focusing on [Places](https://en.wikipedia.org/wiki/Place_%28United_States_Census_Bureau%29)
 
 --
 
@@ -340,7 +340,7 @@ class:center,middle
 
 ---
 
-#The American Community Survey
+# The American Community Survey
 --
 
 + Sample of the population conducted on an ongoing basis
@@ -362,7 +362,7 @@ class:center,middle
 
 ---
 
-#The American Community Survey
+# The American Community Survey
 + Contains detailed ethnic origin, immigration status, income, employment, travel to work, housing status, household composition, and cross tabulations of these values
 --
 
@@ -376,7 +376,7 @@ class:center,middle
 
 ---
 
-#Other Census products of note
+# Other Census products of note
 --
 
 + [American Housing Survey](http://www.census.gov/programs-surveys/ahs.html)
@@ -398,7 +398,7 @@ class:center,middle
 
 ---
 
-#Other Census products of note
+# Other Census products of note
 --
 
 + [Census of Governments](http://www.census.gov/govs/cog/)
@@ -418,11 +418,11 @@ class:center,middle
 ---
 
 class:center,middle
-#Data Structure
+# Data Structure
 
 ---
 
-#Universe
+# Universe
 --
 
 ![img-center-80](../images/universe.png)
@@ -435,7 +435,7 @@ class:center,middle
 
 ---
 
-#Key metrics from the affordability index
+# Key metrics from the affordability index
 + Homeowner Vacancy Rate
 + Rental Vacancy Rate
 + Owner-Occupied
@@ -446,7 +446,7 @@ class:center,middle
 
 ---
 
-#Key metrics from the affordability index
+# Key metrics from the affordability index
 + Owners paying >=30% of Income in Housing Costs
 + Renters paying >=30% of Income in Housing Costs
 + Unemployment Rate
@@ -457,49 +457,50 @@ class:center,middle
 
 ---
 
-#Homeowner Vacancy Rate
-> The homeowner vacancy rate is the proportion of the homeowner housing inventory which is vacant for sale.  It is computed by dividing the number of vacant units for sale only by the sum of owner-occupied units and vacant units that are for sale only, and then multiplying by 100.
+# Homeowner Vacancy Rate
+> ## The homeowner vacancy rate is the proportion of the homeowner housing inventory which is vacant for sale.  It is computed by dividing the number of vacant units for sale only by the sum of owner-occupied units and vacant units that are for sale only, and then multiplying by 100.
 
 Source: [Census](https://ask.census.gov/faq.php?id=5000&faqId=6629)
 
 ---
 
-#Rental Vacancy Rate
-> The proportion of the rental inventory which is vacant for rent.  It is computed by dividing the number of vacant units for rent by the sum of the renter‑occupied units and the number of vacant units for rent, and then multiplying by 100.
+# Rental Vacancy Rate
+> ## The proportion of the rental inventory which is vacant for rent.  It is computed by dividing the number of vacant units for rent by the sum of the renter‑occupied units and the number of vacant units for rent, and then multiplying by 100.
 
 Source: [Census](https://ask.census.gov/faq.php?id=5000&faqId=7019)
 
 ---
 
-#Contract Rent
-> The monthly rent agreed to or contracted for, regardless of any furnishings, utilities, fees, meals, or services that may be included. For vacant units, it is the monthly rent asked for the rental unit at the time of interview.
+# Contract Rent
+> ## The monthly rent agreed to or contracted for, regardless of any furnishings, utilities, fees, meals, or services that may be included. For vacant units, it is the monthly rent asked for the rental unit at the time of interview.
 
 Source: [Census](https://ask.census.gov/faq.php?id=5000&faqId=6525)
 
 ---
 
-#Gross Rent
-> The amount of the contract rent plus the estimated average monthly cost of utilities (electricity, gas, and water and sewer) and fuels (oil, coal, kerosene, wood, etc.) if these are paid for by the renter (or paid for the renter by someone else). Gross rent is intended to eliminate differentials which result from varying practices with respect to the inclusion of utilities and fuels as part of the rental payment.
+# Gross Rent
+> ### The amount of the contract rent plus the estimated average monthly cost of utilities (electricity, gas, and water and sewer) and fuels (oil, coal, kerosene, wood, etc.) if these are paid for by the renter (or paid for the renter by someone else). Gross rent is intended to eliminate differentials which result from varying practices with respect to the inclusion of utilities and fuels as part of the rental payment.
 
 Source: [Census](https://ask.census.gov/faq.php?id=5000&faqId=6613)
 
+
 ---
 
-#Monthly Housing Costs as a % of Income
-> The data for monthly housing costs as a percentage of household income are developed from a distribution of “Selected Monthly Owner Costs as a Percentage of Household Income” for owner-occupied and “Gross Rent as a Percentage of Household Income” for renter-occupied units.
+# Monthly Housing Costs as a % of Income
+> ### The data for monthly housing costs as a percentage of household income are developed from a distribution of “Selected Monthly Owner Costs as a Percentage of Household Income” for owner-occupied and “Gross Rent as a Percentage of Household Income” for renter-occupied units.
 
 Source: [Census](https://ask.census.gov/faq.php?id=5000&faqId=6823)
 
 ---
 
-#Aggregates
-> The sum of the values for each of the elements in the universe.  For example, aggregate household income is the sum of the income of all households in a given geographic area.  Aggregates are frequently used in computing mean values (mean equals aggregate divided by universe count).
+# Aggregates
+> ## The sum of the values for each of the elements in the universe.  For example, aggregate household income is the sum of the income of all households in a given geographic area.  Aggregates are frequently used in computing mean values (mean equals aggregate divided by universe count).
 
 Source: [Census](https://ask.census.gov/faq.php?id=5000&faqId=6183)
 
 ---
 
-#Task
+# Task
 + Working in groups or alone, we're going to build a function for each of the metrics in the affordability index using the [ACS API](http://www.census.gov/data/developers/data-sets/acs-survey-5-year-data.html)
 + The function is going to take in the [state FIPs and place name](data/WWC_fips_list.xlsx) for a city and output the metric
 + Use the [reference sheet](https://docs.google.com/spreadsheets/d/1aKTU5SW5tbZ-s6wwxjONN-sOvM5l0VY7B-HgDC79I4U/edit?usp=sharing) to find the ACS variables
@@ -509,23 +510,23 @@ import requests
 url = 'http://api.census.gov/data/2013/acs5?get='
 api_key = '6122df17856235fccc7ce6a0b92b9dc8b13bddcd'
 
-#Example of query for Adak city, Alaska
-#http://api.census.gov/data/2014/acs5?get=NAME,B01001_001E&for=place:00065&in=state:02
+# Example of query for Adak city, Alaska
+# http://api.census.gov/data/2014/acs5?get=NAME,B01001_001E&for=place:00065&in=state:02
 
 ```
 ---
 
 class:center,middle
-#A guide to Python
+# A guide to Python
 
 ---
 
 class:middle,center
-#Data structures
+# Data structures
 
 ---
 
-#What is a data structure?
+# What is a data structure?
 --
 
 + A way of organizing data in a computer program
@@ -538,18 +539,18 @@ class:middle,center
 
 ---
 
-#Algorithms and Data Structures
+# Algorithms and Data Structures
 ![img-center-90](../images/algo_ds.png)
 
 ---
 
 class:center,middle
-#Data structures in Python
-##How many can you name?
+# Data structures in Python
+## How many can you name?
 
 ---
 
-#Lists
+# Lists
 --
 
 + The most versatile data structure in Python
@@ -572,7 +573,7 @@ class:center,middle
 
 ---
 
-#List functions
+# List functions
 --
 
 + append(_object_) - add object to list
@@ -591,7 +592,7 @@ class:center,middle
 
 ---
 
-#List functions
+# List functions
 + reverse - reverse the order of the list in place
 --
 
@@ -605,11 +606,11 @@ class:center,middle
 
 --
 
-##For more information, see [the documentation ](https://docs.python.org/2/library/functions.html#list)
+## For more information, see [the documentation ](https://docs.python.org/2/library/functions.html# list)
 
 ---
 
-#When to use a list
+# When to use a list
 --
 
 + When order matters
@@ -625,7 +626,7 @@ class:center,middle
 
 ---
 
-#Sets
+# Sets
 --
 
 + An unordered collection with no duplicate values
@@ -649,7 +650,7 @@ print(s)
 
 ---
 
-#When to use sets
+# When to use sets
 --
 
 + When you only need unique values
@@ -665,7 +666,7 @@ print(s)
 
 ---
 
-#Set example
+# Set example
 ```python
 s = set("lede algorithms")
 print(s)
@@ -681,7 +682,7 @@ print(c - s)
 
 ---
 
-#Set functions
+# Set functions
 --
 
 + `add(value)` - adds value to set
@@ -700,7 +701,7 @@ print(c - s)
 
 ---
 
-#Tuples
+# Tuples
 --
 
 + Immutable (unchangable) data structure similar to a list
@@ -714,7 +715,7 @@ print(c - s)
 
 ---
 
-#When to use tuples
+# When to use tuples
 --
 
 + When your data doesn’t change
@@ -724,7 +725,7 @@ print(c - s)
 
 ---
 
-#Dictionaries
+# Dictionaries
 --
 
 + Stores data in key-value pairs
@@ -741,7 +742,7 @@ print(c - s)
 
 ---
 
-#When to use a dictionary
+# When to use a dictionary
 --
 
 + When you need to lookup values by a custom key
@@ -754,7 +755,7 @@ print(c - s)
 
 ---
 
-#Things to remember with a dictionary
+# Things to remember with a dictionary
 --
 
 + Key-value pairs aren’t stored in order (use `collections.OrderedDict` if you need to key order is important)
@@ -764,11 +765,11 @@ print(c - s)
 
 --
 
-##For more information, [check this out](http://code.tutsplus.com/articles/advanced-python-data-structures--net-32748)
+## For more information, [check this out](http://code.tutsplus.com/articles/advanced-python-data-structures--net-32748)
 
 ---
 
-#Control Statements
+# Control Statements
 --
 
 + Manages order of program operation
@@ -781,7 +782,7 @@ print(c - s)
 
 ---
 
-#Sequence
+# Sequence
 --
 
 + The order of functions in a program
@@ -794,7 +795,7 @@ print(c - s)
 
 ---
 
-#Conditional statement (selection)
+# Conditional statement (selection)
 --
 
 + Code block only executes if some logical test is met
@@ -807,7 +808,7 @@ print(c - s)
 
 ---
 
-#Conditional statement in Python (selection)
+# Conditional statement in Python (selection)
 
 + `if <logical test>:` code executes only if the logical test is `True` 
 --
@@ -833,7 +834,7 @@ else:
 ```
 ---
 
-#Conditional statement in Python (selection)
+# Conditional statement in Python (selection)
 + Notice the execution of the `if`, `elif`, `else` is going to stop once a condition is met and the sequence will continue
 ```python
 temp = 25
@@ -851,7 +852,7 @@ else:
 
 ---
 
-#Conditional statement in Python (selection)
+# Conditional statement in Python (selection)
 + This will have a very different result
 ```python
 temp = 25
@@ -869,7 +870,7 @@ else:
 
 ---
 
-#For Loops (iteration)
+# For Loops (iteration)
 --
 
 + Loops through a set sequence of values
@@ -892,7 +893,7 @@ for w in words:
 
 ---
 
-#While Loops (iteration)
+# While Loops (iteration)
 + Loops until a guard condition is met
 --
 
@@ -911,7 +912,7 @@ print(n)
 
 ---
 
-#While Loops (iteration)
+# While Loops (iteration)
 + Use when the number of iterations is unknown
 --
 
@@ -919,7 +920,7 @@ print(n)
 
 ---
 
-#Functions
+# Functions
 --
 
 + Block of organized, reusable code
@@ -932,7 +933,7 @@ print(n)
 
 ---
 
-#When do I write a function?
+# When do I write a function?
 --
 
 + If you find yourself repeating the same code sequence, it’s time to write a function
@@ -945,7 +946,7 @@ print(n)
 
 ---
 
-#Function Example
+# Function Example
 + Try this
 
 ```python
@@ -959,7 +960,7 @@ def add(x,y):
 
 ---
 
-#Function Elements
+# Function Elements
 ![img-center-70](../images/add_algo1.png)
 
 --
@@ -968,42 +969,42 @@ def add(x,y):
 
 ---
 
-#Function Elements
+# Function Elements
 ![img-center-70](../images/add_algo1.png)
 
 ![img-center-70](../images/add_algo3.png)
 
 ---
 
-#Function Elements
+# Function Elements
 ![img-center-70](../images/add_algo1.png)
 
 ![img-center-70](../images/add_algo4.png)
 
 ---
 
-#Function Elements
+# Function Elements
 ![img-center-70](../images/add_algo1.png)
 
 ![img-center-70](../images/add_algo5.png)
 
 ---
 
-#Function Elements
+# Function Elements
 ![img-center-70](../images/add_algo1.png)
 
 ![img-center-70](../images/add_algo6.png)
 
 ---
 
-#Function Elements
+# Function Elements
 ![img-center-70](../images/add_algo1.png)
 
 ![img-center-70](../images/add_algo7.png)
 
 ---
 
-#Thank You
+# Thank You
 + [richard@datapolitan.com](mailto:richard@datapolitan.com)
 + http://blog.datapolitan.com
 + [@rdunks1](https://twitter.com/rdunks1)/[@datapolitan](https://twitter.com/Datapolitan)
