@@ -1,4 +1,4 @@
-# A half day training given on 20 Sept 2016 for using AWS for analysis.
+# A half day training given on 20 Sept 2016 for using AWS for analysis. The [slides are available online](http://labs.centerforgov.org/Analytics-Training/20160920_GovEx_AWS).
 
 # Goals
 + Review the architecture for data ingest
