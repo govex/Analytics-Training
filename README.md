@@ -1,8 +1,8 @@
 # This is a series of in-person training events for members of the [GovEx](https://govex.jhu.edu/) team created by [Datapolitan](http://www.datapolitan.com) on a variety of data and analytics topics. The classes are listed here with links to the online materials from the folders above.
 
 # Classes
-+ [Data Analytics for Cities](http://bit.ly/GovEx-DataAnalysis)
-+ [The Problems of City Managers](http://bit.ly/GovEx-SIA)
++ [Data Analytics for Cities](http://labs.centerforgov.org/Analytics-Training/20160204_DataAnalyticsForCities)
++ [The Problems of City Managers](http://labs.centerforgov.org/Analytics-Training/20160523_SIA)
 + [Interactive Webmapping with CartoDB](http://bit.ly/GovEx-CDB)
 + [Statistics and Data Modeling with City Data](http://bit.ly/GovEx-Stats)
 + [Python for Census Data Analysis](http://bit.ly/govex-python)
